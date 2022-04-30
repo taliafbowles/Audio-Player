@@ -1,0 +1,200 @@
+body {
+    background-color: white;
+    
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+    }
+    
+    /* Using flex with the column direction to
+    align items in a vertical direction */
+    .show_hide{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        justify-content: right;
+    }
+
+    .show_hide_button{
+        font-size: 11px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 0%;
+        margin-bottom: -1px;
+        width: max-content;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .show_hide_button:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 0%;
+    }
+
+    .player {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    .details {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 10px;
+        width: 100%;
+    }
+    
+    .track-art {
+        margin-right: 15px;
+        height: 60px;
+        width: 60px;
+        background-image: URL(
+             "https://source.unsplash.com/Qrspubmx6kE/640x360");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .center-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        height: 40px;
+        width: 100%;
+        position: absolute;
+    }
+    
+    /* Changing the font sizes to suitable ones */
+    .now-playing {
+        font-size: 0px;
+    }
+    
+    .track-name {
+        font-size: 17px;
+    }
+    
+    .track-artist {
+        font-size: 11px;
+    }
+    
+    /* Using flex with the row direction to
+    align items in a horizontal direction */
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 20px;
+    }
+    
+    .playpause-track,
+    .prev-track,
+    .next-track {
+        padding: 0px 25px 0px 25px;
+        opacity: 0.8;
+    
+    /* Smoothly transition the opacity */
+        transition: opacity .2s;
+    }
+
+    /* Change the opacity when mouse is hovered */
+    .playpause-track:hover,
+    .prev-track:hover,
+    .next-track:hover {
+        opacity: 1.0;
+    }
+    
+    /* Define the slider width so that it scales properly */
+    .slider_container {
+        width: 75%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Modify the appearance of the slider */
+    .seek_slider, .volume_slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 5px;
+        background: black;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    #volume{
+        width: 75%;
+        max-width: 400px;
+        display: flex;
+        justify-content: right;
+        align-items: center;  
+    }
+    
+    /* Modify the appearance of the slider thumb */
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: white;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
+    /* Change the opacity when mouse is hovered */
+    .seek_slider:hover,
+    .volume_slider:hover {
+        opacity: 1.0;
+    }
+    
+    .seek_slider {
+        width: 60%;
+    }
+    
+    .volume_slider {
+        width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+        padding: 10px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+        padding: 10px;
+    }
+    
+    /* Change the mouse cursor to a pointer
+    when hovered over */
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward {
+        cursor: pointer;
+    }
+    
+    /* button sizes */
+    .fa-5x {
+        font-size: 40px;
+    }
+
+    .fa-2x {
+        font-size: 20px;
+    }
