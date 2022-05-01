@@ -28,7 +28,7 @@ let track_list = [
 	name: "Wait",
 	artist: "NoMBe",
 	image: "https://i.scdn.co/image/ab67616d0000b2739e030328b82bb4da84192ba2",
-	path: "/Users/taliabowles/Desktop/Audio Player/Resources/Tracks/Wait.m4a"
+	path: "https://drive.google.com/uc?export=view&id=1fQmVIVdagn8LyzDZd7XfiTYDo-9lRwiv"
 },
 {
 	name: "Enthusiast",
